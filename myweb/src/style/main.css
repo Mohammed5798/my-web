@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Italiana", serif;
+  font-style: normal;
+}
+*::-moz-selection {
+  background-color: white;
+}
+*::selection {
+  background-color: white;
+}
+
+.navbar-container .main-navbar {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 20px 85px;
+  gap: 0px 400px;
+}
+.navbar-container .main-navbar .middle {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.navbar-container .main-navbar .middle .left-line {
+  width: 200px;
+  height: 1.3px;
+  background-color: #B49450;
+  margin-top: 19.5px;
+  margin-left: -40px;
+}
+.navbar-container .main-navbar .middle .circle1 {
+  width: 20px;
+  height: 20px;
+  background-color: #B49450;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 10;
+  margin: -10px 90px;
+}
+.navbar-container .main-navbar .middle .circle2 {
+  width: 20px;
+  height: 20px;
+  background-color: #B49450;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 10;
+  margin: -10px -100px;
+}
+.navbar-container .main-navbar .middle .menu {
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-left: 25px;
+}
+.navbar-container .main-navbar .middle .right-line {
+  width: 200px;
+  height: 1.3px;
+  background-color: #B49450;
+  margin-top: 19.5px;
+  margin-left: 20px;
+}
+.navbar-container .main-navbar .sun {
+  font-size: 40px;
+  margin-left: 10px;
+}
