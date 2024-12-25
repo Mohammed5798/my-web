@@ -1,28 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-*{margin: 0px; padding: 0px; box-sizing: border-box; text-decoration: none; font-family: "Italiana", serif; font-style: normal; &::selection{background-color: white;}};
+*{margin: 0px; padding: 0px; box-sizing: border-box; text-decoration: none; font-family: "Italiana", serif; font-style: normal; 
+    &::selection{background-color: white;}
+
+    background-color: #1F2D23;
+};
 
 
 //* ------------------navbar-----------------------------//
-.navbar-container{
+.navbar-container{background-color: #D9D9D9;
 
-    .main-navbar{display: flex; flex-direction: row; text-align: center; margin: 20px 85px; gap: 0px 400px;
+    .inactive-navbar{display: flex; flex-direction: row; text-align: center; margin: 0px 85px; gap: 0px 390px; padding-top: 20px; background-color: #D9D9D9;
 
-        .logo{};
+        .logo{margin-top: -6px; margin-left: 10px; padding-bottom: 10px; background-color: #D9D9D9;};
 
-        .middle{display: flex; flex-direction: row; text-align: center;
+        .middle{display: flex; flex-direction: row; text-align: center; background-color: #D9D9D9;
 
-            .left-line{width: 200px; height: 1.3px; background-color: #B49450; margin-top: 19.5px; margin-left: -40px;};
+            .left-line{width: 200px; height: 0.9px; background-color: #B49450; margin-top: 19.5px; margin-left: -125px;};
 
-            .circle1{width: 20px; height: 20px; background-color: #B49450; border-radius: 100%; position: absolute; z-index: 10; margin: -10px 90px;};
+            .circle1{width: 16px; height: 16px; background-color: #B49450; border-radius: 100%; position: absolute; z-index: 10; margin: -8px 90px;};
 
-            .circle2{width: 20px; height: 20px; background-color: #B49450; border-radius: 100%; position: absolute; z-index: 10; margin: -10px -100px;};
+            .circle2{width: 16px; height: 16px; background-color: #B49450; border-radius: 100%; position: absolute; z-index: 10; margin: -8px -100px;};
 
-            .menu{font-weight: 400; text-transform: capitalize; margin-left: 25px;};
+            .menu{font-weight: 400; text-transform: capitalize; margin-left: 85px; color: #B49450; background-color: #D9D9D9;
+                cursor: pointer; &:hover{color: #1F2D23;};
+            };
 
-            .right-line{width: 200px; height: 1.3px; background-color: #B49450; margin-top: 19.5px; margin-left: 20px;};
+            .right-line{width: 200px; height: 0.9px; background-color: #B49450; margin-top: 19.5px; margin-left: 80px;};
         };
 
-        .sun{font-size: 40px; margin-left: 10px;};
+        .span-sun{font-size: 40px; margin-left: -50px; color: #B49450; background-color: #D9D9D9; .sun{background-color: #D9D9D9;}};
 
-    }
-}
+        .top{display: none;};
+        .down{display: none;};
+
+    };
+
+    .active-navbar{ text-align: center;
+
+        .logo{display: none;};
+
+        .middle{display: none;};
+
+        .span-sun{display: none;};
+
+        .top{
+            .button-close{color: #B49450; font-size: 60px; cursor: pointer;};
+        };
+
+        .down{display: grid; grid-template-columns: 1fr 1fr; align-items: center;};
+
+
+
+    };
+};
