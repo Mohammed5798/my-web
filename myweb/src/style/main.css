@@ -6,7 +6,6 @@
   text-decoration: none;
   font-family: "Italiana", serif;
   font-style: normal;
-  background-color: #1F2D23;
 }
 *::-moz-selection {
   background-color: white;
@@ -98,7 +97,8 @@
   display: none;
 }
 .navbar-container .active-navbar {
-  text-align: center;
+  background-color: #1F2D23;
+  height: 747px;
 }
 .navbar-container .active-navbar .logo {
   display: none;
@@ -109,6 +109,10 @@
 .navbar-container .active-navbar .span-sun {
   display: none;
 }
+.navbar-container .active-navbar .top {
+  text-align: center;
+  margin-left: -60px;
+}
 .navbar-container .active-navbar .top .button-close {
   color: #B49450;
   font-size: 60px;
@@ -117,5 +121,29 @@
 .navbar-container .active-navbar .down {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  justify-items: center;
+}
+.navbar-container .active-navbar .down .left {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: -60px 0px;
+}
+.navbar-container .active-navbar .down .left .link {
+  font-size: 60px;
+  text-transform: capitalize;
+  color: #B49450;
+  margin-top: 20px;
+}
+.navbar-container .active-navbar .down .left #options {
+  width: 300px;
+  border: none;
+  color: #B49450;
+  font-size: 60px;
+  outline: none;
+  background-color: #1F2D23;
+}
+.navbar-container .active-navbar .down .right .shape {
+  margin-top: -75px;
+  margin-left: 96px;
 }

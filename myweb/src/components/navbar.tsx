@@ -2,18 +2,31 @@ import '../style/main.css';
 import { LuSunMedium } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function NavBar() {
+    
     const [isActive, setIsActive] = useState(true);
+
+    const navigate = useNavigate();
 
     const menuClicking = () => {
         setIsActive(!isActive);
     };
 
-    // const menuClose = ()=>{ setIsActive(isActive); console.log("hi")};
+    const selectHandle = (event:any)=>{
 
-    const downloadingCV = ()=>{};
+        let selectedValue = event.target.value;
+
+        if(selectedValue === "option1"){
+            navigate('/graphicDesign');
+        }else{
+            navigate('/webDev');
+        }
+    };
+
+    //* CV not completed
+    const downloadingCV = () => {};
 
     return (
 
@@ -46,29 +59,25 @@ function NavBar() {
 
                     <div className="left">
 
-                        <Link to="/">home</Link>
+                        <Link to="/" className='link'>home</Link>
 
-                        <Link to="/aboutMe">about me</Link>
+                        <Link to="/aboutMe" className='link'>about me</Link>
 
-                        <label htmlFor="options">my skills</label>
-
-                        <select id="options">
-
-                            <option value="option1">graphic design</option>
-
-                            <option value="option2">web development</option>
-
+                        <select id="options" value="my skills" onChange={selectHandle}>
+                            <option value="my skills" disabled>My Skills</option>
+                            <option value="option1"> Graphic Design</option>
+                            <option value="option2">Web Development</option>
                         </select>
-                        
+
                         <Link to="/contact" className='link'>contact</Link>
 
                         {/* not completed */}
-                        <p className="CV" onClick={downloadingCV}>download CV</p>
+                        <a className="link" onClick={downloadingCV}>download CV</a>
 
                     </div>
 
                     <div className="right">
-                        <img src="/assets/Ellipse 9.svg" alt="" />
+                        <img className='shape' src="/assets/Ellipse 9.svg" alt="" />
 
                         <div className="icons">
                             <div className="left"></div>
