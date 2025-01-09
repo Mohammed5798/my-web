@@ -99,6 +99,7 @@
 .navbar-container .active-navbar {
   background-color: #1F2D23;
   height: 747px;
+  overflow: hidden;
 }
 .navbar-container .active-navbar .logo {
   display: none;
@@ -127,7 +128,7 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  margin: -60px 0px;
+  margin-top: -60px;
 }
 .navbar-container .active-navbar .down .left .link {
   font-size: 60px;
@@ -142,8 +143,124 @@
   font-size: 60px;
   outline: none;
   background-color: #1F2D23;
+  margin-left: -5px;
+}
+.navbar-container .active-navbar .down .left #options option {
+  font-size: 30px;
+  margin-left: 100px;
 }
 .navbar-container .active-navbar .down .right .shape {
   margin-top: -75px;
   margin-left: 96px;
+  position: relative;
+  z-index: 2;
+}
+.navbar-container .active-navbar .down .right .icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  z-index: 3;
+  margin: -600px 200px;
+}
+.navbar-container .active-navbar .down .right .icons .left {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+  gap: 20px;
+}
+.navbar-container .active-navbar .down .right .icons .left .brush-tool-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #1F2D23;
+  text-align: center;
+  margin-left: -50px;
+  margin-top: 50px;
+}
+.navbar-container .active-navbar .down .right .icons .left .brush-tool-circle .brush-tool {
+  color: white;
+  font-size: 45px;
+  margin-top: 16px;
+}
+.navbar-container .active-navbar .down .right .icons .left .pen-tool-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #1F2D23;
+  text-align: center;
+  margin: -40px 90px;
+}
+.navbar-container .active-navbar .down .right .icons .left .pen-tool-circle .pen-tool {
+  color: white;
+  font-size: 39px;
+  margin-top: 20px;
+}
+.navbar-container .active-navbar .down .right .icons .left .code-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #1F2D23;
+  text-align: center;
+  margin: 130px 120px;
+}
+.navbar-container .active-navbar .down .right .icons .left .code-circle .code {
+  color: white;
+  font-size: 45px;
+  margin-top: 18px;
+}
+.navbar-container .active-navbar .down .right .icons .right {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.navbar-container .active-navbar .down .right .icons .right .file-code-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #1F2D23;
+  text-align: center;
+  margin: -50px -235px;
+}
+.navbar-container .active-navbar .down .right .icons .right .file-code-circle .file-code {
+  color: white;
+  font-size: 40px;
+  margin-top: 18px;
+}
+.navbar-container .active-navbar .down .right .icons .right .color-pen-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #1F2D23;
+  text-align: center;
+  margin: 165px -100px;
+}
+.navbar-container .active-navbar .down .right .icons .right .color-pen-circle .color-pen {
+  color: white;
+  font-size: 34px;
+  margin-top: 20px;
+}
+.navbar-container .active-navbar .down .right .icons .right .design-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #1F2D23;
+  text-align: center;
+  margin: -125px 68px;
+}
+.navbar-container .active-navbar .down .right .icons .right .design-circle .design {
+  margin-top: 17px;
+  width: 43px;
+}
+.navbar-container .active-navbar .down .right .icons .right .digital-drawing-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #1F2D23;
+  text-align: center;
+  margin: 0px 0px;
+}
+.navbar-container .active-navbar .down .right .icons .right .digital-drawing-circle .digital-drawing {
+  width: 50px;
+  margin-top: 11px;
 }
