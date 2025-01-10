@@ -47,15 +47,31 @@ function NavBar() {
         setIsTheme(isThem === "light" ? "dark" : "light");
     }
 
+    //*-----------------changing the class name based on the theme (for active navbar)-------------------//
+    const handleClassName1 = ()=>{
+        
+        if(isThem === "light") return "active-navbar-light";
+
+        if(isThem === "dark") return "active-navbar-dark";
+    };
+
+    //*-----------------changing the class name based on the theme (for inactive navbar)-------------------//
+    const handleClassName2 = ()=>{
+        
+        if(isThem === "light") return "inactive-navbar-light";
+
+        if(isThem === "dark") return "inactive-navbar-dark";
+    };
+
     //* CV not completed
     const downloadingCV = () => {};
 
     return (
 
-        <div className="navbar-container">
+        <div className={isThem == 'light' ? "navbar-container-light" : "navbar-container-dark"}>
 
             {/* inactive navbar */}
-            <div className={isActive ? "inactive-navbar" : "active-navbar"}>
+            <div className={isActive ? `${handleClassName2()}` : `${handleClassName1()}`}>
 
                 <img className='logo' src="/assets/logo.svg" alt="hi" />
 
