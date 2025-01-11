@@ -6,6 +6,7 @@ import { HiPaintBrush } from "react-icons/hi2";
 import { VscCodeOss, VscFileCode } from "react-icons/vsc";
 import { FiPenTool } from "react-icons/fi";
 import { FaEyeDropper } from "react-icons/fa";
+import { motion } from "motion/react"
 
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -71,7 +72,11 @@ function NavBar() {
         <div className={isThem == 'light' ? "navbar-container-light" : "navbar-container-dark"}>
 
             {/* inactive navbar */}
-            <div className={isActive ? `${handleClassName2()}` : `${handleClassName1()}`}>
+            <motion.div className={isActive ? `${handleClassName2()}` : `${handleClassName1()}`}
+            initial={{y:-30, opacity:0}}
+            animate={{y:0, opacity:1}}
+            transition={{duration: 1.2, ease:'backInOut'}}
+            >
 
                 <img className='logo' src="/assets/logo.svg" alt="hi" />
 
@@ -90,11 +95,19 @@ function NavBar() {
                 <span className="span-sun" onClick={changeThem}><LuSunMedium className='sun' /></span>
 
                 {/* active navbar */}
-                <div className="top">
+                <motion.div className="top"
+                            initial={{y:-100, opacity:0}}
+                            whileInView={{y:20, opacity:1}}
+                            transition={{duration: 1.2, ease:'easeInOut'}}
+                >
                     <span className='button-close' onClick={menuClicking}><IoMdClose /></span>
-                </div>
+                </motion.div>
 
-                <div className="down">
+                <motion.div className="down"
+                            initial={{y:-250, opacity:0}}
+                            whileInView={{y:0, opacity:1}}
+                            transition={{duration: 1.2, ease:'easeInOut'}}
+                >
 
                     <div className="left">
 
@@ -137,9 +150,9 @@ function NavBar() {
                         </div>
                     </div>
 
-                </div>
+                </motion.div>
 
-            </div>
+            </motion.div>
 
         </div>
     );
