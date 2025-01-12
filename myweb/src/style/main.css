@@ -550,6 +550,7 @@
   text-transform: capitalize;
   font-weight: 100;
   font-size: 65px;
+  transition: 1s;
 }
 .home-container-dark .left .top .myname {
   color: #B49450;
@@ -615,7 +616,7 @@
   grid-template-columns: 1fr 1fr;
   place-items: center;
   height: 87.7vh;
-  background-color: white;
+  background-color: #D9D9D9;
 }
 .home-container-light .left {
   display: flex;
@@ -636,6 +637,7 @@
   text-transform: capitalize;
   font-weight: 100;
   font-size: 65px;
+  transition: 1s;
 }
 .home-container-light .left .top .myname {
   color: #B49450;
@@ -650,7 +652,10 @@
   text-transform: capitalize;
 }
 .home-container-light .left .top .second-title span {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.home-container-light .left .bottom {
+  margin-left: -25px;
 }
 .home-container-light .left .bottom .button {
   width: 190px;
@@ -691,4 +696,142 @@
   font-size: 29px;
   transform: rotate(-90deg);
   text-transform: capitalize;
+}
+
+.about-me-container-dark {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  background-color: #1F2D23;
+  height: 100vh;
+}
+.about-me-container-dark .left-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.about-me-container-dark .left-text .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me-container-dark .left-text .left .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #B49450;
+}
+.about-me-container-dark .left-text .left .line {
+  width: 1px;
+  height: 200px;
+  background-color: #B49450;
+}
+.about-me-container-dark .left-text .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me-container-dark .left-text .right .title {
+  font-size: 50px;
+  text-transform: capitalize;
+  color: #B49450;
+  font-weight: 100;
+}
+.about-me-container-dark .left-text .right .readMore {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #B49450;
+  border: none;
+  border-radius: 5px;
+  color: #D9D9D9;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.about-me-container-dark .left-text .right .readMore:hover {
+  border: 2px solid #B49450;
+  border-radius: 0px;
+  color: #B49450;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.about-me-container-dark .left-text .right .readMore:active {
+  background-color: #D9D9D9;
+  color: #1F2D23;
+  border: none;
+}
+.about-me-container-dark .middle {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 45px;
+}
+.about-me-container-dark .middle .shape {
+  width: 380px;
+  height: 600px;
+  background-color: #B49450;
+  border-radius: 15px;
+  position: relative;
+  margin-left: 0px;
+}
+.about-me-container-dark .middle .my-image {
+  position: absolute;
+  z-index: 5;
+  width: 250px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.about-me-container-dark .right-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-me-container-dark .right-text .left {
+  display: flex;
+  flex-direction: column;
+}
+.about-me-container-dark .right-text .left .title {
+  font-size: 50px;
+  text-transform: capitalize;
+  color: #B49450;
+  font-weight: 100;
+}
+.about-me-container-dark .right-text .left .text {
+  color: #D9D9D9;
+}
+.about-me-container-dark .right-text .left .readMore {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #B49450;
+  border: none;
+  border-radius: 5px;
+  color: #D9D9D9;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.about-me-container-dark .right-text .left .readMore:hover {
+  border: 2px solid #B49450;
+  border-radius: 0px;
+  color: #B49450;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.about-me-container-dark .right-text .left .readMore:active {
+  background-color: #D9D9D9;
+  color: #1F2D23;
+  border: none;
+}
+.about-me-container-dark .right-text .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me-container-dark .right-text .right .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #B49450;
+}
+.about-me-container-dark .right-text .right .line {
+  width: 1px;
+  height: 200px;
+  background-color: #B49450;
 }

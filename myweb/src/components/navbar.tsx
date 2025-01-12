@@ -7,61 +7,52 @@ import { VscCodeOss, VscFileCode } from "react-icons/vsc";
 import { FiPenTool } from "react-icons/fi";
 import { FaEyeDropper } from "react-icons/fa";
 import { motion } from "motion/react"
-
 import { Link, useNavigate } from 'react-router-dom';
+import { useTheme } from '../context/context';
+
 
 function NavBar() {
-    
+
     const [isActive, setIsActive] = useState(true);
 
     const navigate = useNavigate();
 
-    //*------------closing & opening the navbar--------------//
+    //*closing & opening the navbar//
     const menuClicking = () => {
         setIsActive(!isActive);
     };
 
-    //* --------- function for skills pages-----------//
-    const selectHandle = (event:any)=>{
+    //*function for skills options//
+    const selectHandle = (event: any) => {
 
         let selectedValue = event.target.value;
 
-        if(selectedValue === "option1"){
+        if (selectedValue === "option1") {
             navigate('/graphicDesign');
             setIsActive(true);
-        }else{
+        } else {
             navigate('/webDev');
             setIsActive(true);
         }
     };
 
-    //*----------------dark mood & light mood---------------//
-    const [isThem, setIsTheme] = useState(()=>{
-        return localStorage.getItem("theme") || "light";
-    });
+    //*dark mood & light mood//
+    const { theme, toggleTheme } = useTheme()
 
-    useEffect(()=>{
-        localStorage.setItem("theme", isThem);
-    },[isThem]);
+    //*changing the class name based on the theme (for active navbar)//
+    const handleClassName1 = () => {
 
-    const changeThem = ()=>{
-        setIsTheme(isThem === "light" ? "dark" : "light");
-    }
+        if (theme === "light") return "active-navbar-light";
 
-    //*-----------------changing the class name based on the theme (for active navbar)-------------------//
-    const handleClassName1 = ()=>{
-        
-        if(isThem === "light") return "active-navbar-light";
-
-        if(isThem === "dark") return "active-navbar-dark";
+        if (theme === "dark") return "active-navbar-dark";
     };
 
-    //*-----------------changing the class name based on the theme (for inactive navbar)-------------------//
-    const handleClassName2 = ()=>{
-        
-        if(isThem === "light") return "inactive-navbar-light";
+    //*changing the class name based on the theme (for inactive navbar)//
+    const handleClassName2 = () => {
 
-        if(isThem === "dark") return "inactive-navbar-dark";
+        if (theme === "light") return "inactive-navbar-light";
+
+        if (theme === "dark") return "inactive-navbar-dark";
     };
 
     //* CV not completed
@@ -69,13 +60,13 @@ function NavBar() {
 
     return (
 
-        <div className={isThem == 'light' ? "navbar-container-light" : "navbar-container-dark"}>
+        <div className={theme == 'light' ? "navbar-container-light" : "navbar-container-dark"}>
 
             {/* inactive navbar */}
             <motion.div className={isActive ? `${handleClassName2()}` : `${handleClassName1()}`}
-            initial={{y:-30, opacity:0}}
-            animate={{y:0, opacity:1}}
-            transition={{duration: 1.2, ease:'backInOut'}}
+                initial={{ y: -30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.2, ease: 'backInOut' }}
             >
 
                 <img className='logo' src="/assets/logo.svg" alt="hi" />
@@ -92,28 +83,24 @@ function NavBar() {
 
                 </div>
 
-                <span className="span-sun" onClick={changeThem}><LuSunMedium className='sun' /></span>
+                <span className="span-sun" onClick={toggleTheme}><LuSunMedium className='sun' /></span>
 
                 {/* active navbar */}
-                <motion.div className="top"
-                            initial={{y:-100, opacity:0}}
-                            whileInView={{y:20, opacity:1}}
-                            transition={{duration: 1.2, ease:'easeInOut'}}
-                >
+                <div className="top">
                     <span className='button-close' onClick={menuClicking}><IoMdClose /></span>
-                </motion.div>
+                </div>
 
                 <motion.div className="down"
-                            initial={{y:-250, opacity:0}}
-                            whileInView={{y:0, opacity:1}}
-                            transition={{duration: 1.2, ease:'easeInOut'}}
+                    initial={{ y: -250, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1.2, ease: 'easeInOut' }}
                 >
 
                     <div className="left">
 
-                        <Link to="/" className='link' onClick={()=> setIsActive(true)}>home</Link>
+                        <Link to="/" className='link' onClick={() => setIsActive(true)}>home</Link>
 
-                        <Link to="/aboutMe" className='link' onClick={()=> setIsActive(true)}>about me</Link>
+                        <Link to="/aboutMe" className='link' onClick={() => setIsActive(true)}>about me</Link>
 
                         <select id="options" value="my skills" onChange={selectHandle}>
                             <option value="my skills" disabled>My Skills</option>
@@ -121,7 +108,7 @@ function NavBar() {
                             <option value="option2" >Web Development</option>
                         </select>
 
-                        <Link to="/contact" className='link' onClick={()=> setIsActive(true)}>contact</Link>
+                        <Link to="/contact" className='link' onClick={() => setIsActive(true)}>contact</Link>
 
                         {/* not completed */}
                         <a className="link" onClick={downloadingCV}>download CV</a>
@@ -134,17 +121,17 @@ function NavBar() {
                         <div className="icons">
                             <div className="left">
 
-                            <span className="brush-tool-circle"><HiPaintBrush className='brush-tool'/></span>
-                            <span className="pen-tool-circle"><FiPenTool className='pen-tool'/></span>
-                            <span className="code-circle"><VscCodeOss className='code'/></span>
+                                <span className="brush-tool-circle"><HiPaintBrush className='brush-tool' /></span>
+                                <span className="pen-tool-circle"><FiPenTool className='pen-tool' /></span>
+                                <span className="code-circle"><VscCodeOss className='code' /></span>
 
                             </div>
                             <div className="right">
 
-                            <span className="file-code-circle"><VscFileCode className='file-code'/></span>
-                            <span className="color-pen-circle"><FaEyeDropper className='color-pen'/></span>
-                            <span className="design-circle"> <img src="assets/design 2.svg" alt="hi" className='design' /> </span>
-                            <span className="digital-drawing-circle"> <img src="assets/digital-drawing 1.svg" alt="hi" className='digital-drawing'/> </span>
+                                <span className="file-code-circle"><VscFileCode className='file-code' /></span>
+                                <span className="color-pen-circle"><FaEyeDropper className='color-pen' /></span>
+                                <span className="design-circle"> <img src="assets/design 2.svg" alt="hi" className='design' /> </span>
+                                <span className="digital-drawing-circle"> <img src="assets/digital-drawing 1.svg" alt="hi" className='digital-drawing' /> </span>
 
                             </div>
                         </div>

@@ -259,7 +259,7 @@
 
         .top{display: flex; flex-direction: column; text-align: center; row-gap: 10px;
 
-            .first-title{color: #B49450; text-transform: capitalize; font-weight: 100; font-size: 65px;};
+            .first-title{color: #B49450; text-transform: capitalize; font-weight: 100; font-size: 65px; transition: 1s;};
 
             .myname{color: #B49450; text-transform: uppercase; font-weight: 100; font-size: 120px;};
             
@@ -286,23 +286,23 @@
     };
 };
 
-.home-container-light{display: grid; grid-template-columns: 1fr 1fr; place-items: center; height: 87.7vh; background-color: white;
+.home-container-light{display: grid; grid-template-columns: 1fr 1fr; place-items: center; height: 87.7vh; background-color: #D9D9D9;
 
     .left{display: flex; flex-direction: column; text-align: center; row-gap: 45px; margin-left: 380px; width: 750px;
 
         .top{display: flex; flex-direction: column; text-align: center; row-gap: 10px;
 
-            .first-title{color: #B49450; text-transform: capitalize; font-weight: 100; font-size: 65px;};
+            .first-title{color: #B49450; text-transform: capitalize; font-weight: 100; font-size: 65px; transition: 1s;};
 
             .myname{color: #B49450; text-transform: uppercase; font-weight: 100; font-size: 120px;};
             
             .second-title{color: #B49450; font-weight: 100; font-size: 65px; text-transform: capitalize; 
 
-                span{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+                span{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
             };
         };
 
-        .bottom{
+        .bottom{margin-left: -25px;
             .button{width: 190px; height: 67px; text-align: center; font-size: 37px; text-transform: capitalize; background-color: #B49450;
                 color: #D9D9D9; border: none; border-radius: 8px; font-weight: 500; cursor: pointer; transition: .6s;
 
@@ -318,3 +318,50 @@
         .text{color: #B49450; font-size: 29px; transform: rotate(-90deg); text-transform: capitalize;};
     };
 };
+
+//*----------------------about me-----------------------//
+.about-me-container-dark{display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; text-align: center; background-color: #1F2D23; height: 100vh;
+
+    .left-text{display: grid; grid-template-columns: 1fr 1fr; align-items: center;
+
+        .left{display: flex; flex-direction: column; align-items: center;
+            .circle{width: 20px; height: 20px; border-radius: 100px; background-color: #B49450;};
+            .line{width: 1px; height: 200px; background-color: #B49450;};
+        };
+
+        .right{display: flex; flex-direction: column; align-items: center;
+            .title{font-size: 50px; text-transform: capitalize; color: #B49450; font-weight: 100;};
+            .text{};
+            .readMore{padding: 10px 20px; font-size: 20px; background-color: #B49450; border: none; border-radius: 5px; color: #D9D9D9; 
+                text-transform: capitalize; transition: .3s;
+                &:hover{border: 2px solid #B49450; border-radius: 0px; color: #B49450; background-color: transparent; transition: .3s;};
+                &:active{background-color: #D9D9D9; color: #1F2D23; border: none;}
+            };
+        };
+    };
+
+    .middle{display: flex; margin-top: 50px; margin-left: 45px;
+        .shape{width: 380px; height: 600px; background-color: #B49450; border-radius: 15px; position: relative; margin-left: 0px;};
+
+        .my-image{position: absolute; z-index: 5; width: 250px; margin-left: 70px; margin-top: 20px;};
+    };
+
+    .right-text{display: grid; grid-template-columns: 1fr 1fr;
+        
+        .left{display: flex; flex-direction: column;
+            .title{font-size: 50px; text-transform: capitalize; color: #B49450; font-weight: 100;};
+            .text{color: #D9D9D9;};
+            .readMore{padding: 10px 20px; font-size: 20px; background-color: #B49450; border: none; border-radius: 5px; color: #D9D9D9; 
+                text-transform: capitalize; transition: .3s;
+                &:hover{border: 2px solid #B49450; border-radius: 0px; color: #B49450; background-color: transparent; transition: .3s;};
+                &:active{background-color: #D9D9D9; color: #1F2D23; border: none;}
+            };
+        };
+
+        .right{display: flex; flex-direction: column; align-items: center;
+
+            .circle{width: 20px; height: 20px; border-radius: 100px; background-color: #B49450;};
+            .line{width: 1px; height: 200px; background-color: #B49450;};
+        };
+    };
+}
