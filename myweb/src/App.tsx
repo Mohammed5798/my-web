@@ -6,6 +6,7 @@ import GraphicDesign from './pages/graphicDesign';
 import WebDev from './pages/webDev';
 import Contact from './pages/contact';
 import AboutMe from './pages/aboutMe';
+import Footer from './components/footer';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/webDev' element={<WebDev/>}/>
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
+        <Footer></Footer>
       </Router>
 
     </div>

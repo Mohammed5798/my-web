@@ -67,7 +67,7 @@ function AboutMe() {
                     <div className="right">
                         <h1 className="title">what i do</h1>
                         <p className="text">
-                            specialize in front-end technology and web design with expertise in creating visually appealing
+                            I specialize in front-end technology and web design with expertise in creating visually appealing
                             and functional websites. My skills include JavaScript, HTML, CSS, React, TypeScript, and SCSS, which I use to build responsive
                             and user-friendly web applications. Additionally, I have a strong background in web design, utilizing tools like
                             Photoshop, Illustrator, Figma, and Adobe XD to craft professional designs for various projects. Over the years, I’ve
@@ -79,9 +79,12 @@ function AboutMe() {
 
                 </div>
 
-                <img src="/assets/about me image.svg" alt="hi" className="myImage" />
-            </div>
+                <div className="myImage">
 
+                    <img src="/assets/about me image.svg" alt="hi" className="image" />
+                </div>
+
+            </div>
 
         </div>
     );
