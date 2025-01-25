@@ -1,17 +1,46 @@
+import { useState, } from 'react';
 import { useTheme } from '../context/context';
+import { motion } from 'motion/react';
 import '../style/main.css';
 
 function AboutMe() {
+
+    const [text, setText] = useState(true);
+    const [text1, setText1] = useState(true);
+
+    const Changing = ()=>{
+        
+        if(text == true){
+            setText(false);
+        }else{
+            setText(true);
+        }
+    };
+
+    const Changing1 = ()=>{
+        
+        if(text1 == true){
+            setText1(false);
+        }else{
+            setText1(true);
+        }
+    };
 
     //* dark/light mood
     const { theme } = useTheme();
 
     return (
-        <div className={theme == "dark" ? "about-me-container-dark" : "about-me-container-light"}>
+        <div id='aboutMe' className={theme == "dark" ? "about-me-container-dark" : "about-me-container-light"}>
 
             <div className="top">
 
-                <div className="left-text">
+                <motion.div className="left-text"
+                
+                initial={{ y:-100, opacity:0 }}
+                whileInView={{ y:0, opacity:1 }}
+                transition={{ duration:1, delay:1.6, type:"tween" }}
+
+                >
 
                     <div className="left">
                         <span className="circle"></span>
@@ -26,47 +55,65 @@ function AboutMe() {
                             and playing chess, I’d like to connect and collaborate, Feel free to check out my projects or drop me a message to
                             discuss exciting opportunities.
                         </p>
-                        <button className="readMore">contact me</button>
+                        <a href='/contact' className="readMore">contact me</a>
                     </div>
 
-                </div>
+                </motion.div>
 
-                <div className="middle">
+                <motion.div className="middle"
+                
+                initial={{ scale:1.1, opacity:0 }}
+                whileInView={{ scale:1, opacity:1 }}
+                transition={{ duration:1, delay:3, type:"tween" }}
+
+                >
                     <span className="shape"></span>
                     <img className='my-image' src="/assets/me5 4.svg" alt="hi" />
-                </div>
+                </motion.div>
 
-                <div className="right-text">
+                <motion.div className="right-text"
+                
+                initial={{ y:100, opacity:0 }}
+                whileInView={{ y:0, opacity:1 }}
+                transition={{ duration:1, delay:1.6, type:"tween" }}
+
+                >
 
                     <div className="left">
-                        <h1 className="title">my mindset</h1>
-                        <p className="text">My mindset is rooted in openness,curiosity, and growth. I am open-minded, embracing new ideas and
+                        <h1 className={text ? "title" : "editedTitle"}>my mindset</h1>
+                        <p className={ text ? "text" : "showedText"}>My mindset is rooted in openness,curiosity, and growth. I am open-minded, embracing new ideas and
                             perspectives to fuel creativity and adaptability. I prioritize clear and meaningful interactions, value strong connections and effective
                             collaboration. Problem-solving and critical thinking are key strengths, enabling me to tackle challenges effectively and deliver thoughtful solutions.
                             As a passionate learner, I currently speak English and Arabic and aim to master five languages by 2035. For me, learning expands
                             perspectives and deepens connections, driving both personal and professional growth.</p>
-                        <button className="readMore">read more</button>
+                        <button onClick={Changing} className="readMore"> {text ? "read more" : "read less"}</button>
                     </div>
-                    <div className="right">
+                    <div className={text ? "right" : "editedRight"}>
                         <span className="circle"></span>
                         <span className="line"></span>
                     </div>
 
-                </div>
+                </motion.div>
             </div>
 
             <div className="down">
 
-                <div className="left-text">
+                <motion.div className="left-text"
+                
+                initial={{ x:-100, opacity:0 }}
+                whileInView={{ x:0, opacity:1 }}
+                transition={{ duration:1, delay:1, type:"tween" }}
 
-                    <div className="left">
+                >
+
+                    <div className={text1 ? "left" : "editedLeft"}>
                         <span className="circle"></span>
                         <span className="line"></span>
                     </div>
 
                     <div className="right">
-                        <h1 className="title">what i do</h1>
-                        <p className="text">
+                        <h1 className={text1 ? "title" : "titled"}>what i do</h1>
+                        <p className={text1 ? "text" : "texted"}>
                             I specialize in front-end technology and web design with expertise in creating visually appealing
                             and functional websites. My skills include JavaScript, HTML, CSS, React, TypeScript, and SCSS, which I use to build responsive
                             and user-friendly web applications. Additionally, I have a strong background in web design, utilizing tools like
@@ -74,10 +121,10 @@ function AboutMe() {
                             completed multiple projects that demonstrate my ability to merge creativity and technical knowledge. Whether designing
                             a web interface or creating visual assets, I am passionate about delivering high-quality, impactful results.
                         </p>
-                        <button className="readMore">contact me</button>
+                        <button onClick={Changing1} className="readMore">{text1 ? "read more" : "read less"}</button>
                     </div>
 
-                </div>
+                </motion.div>
 
                 <div className="myImage">
 

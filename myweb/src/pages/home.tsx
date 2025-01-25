@@ -40,7 +40,7 @@ function HomePage() {
                             className="second-title">designer <span>&</span> developer</motion.h1>
                     </div>
     
-                    <div className="bottom">
+                    <a href='#aboutMe' className="bottom">
                         <motion.button 
     
                             initial={{ y: 120, opacity: 0, }}
@@ -48,7 +48,7 @@ function HomePage() {
                             transition={{ duration: 1, delay: 2.8, type: 'spring' }}
     
                             className="button">explore</motion.button>
-                    </div>
+                    </a>
     
                 </div>
     
@@ -67,6 +67,8 @@ function HomePage() {
                 </motion.div>
     
             </div>
+
+            <AboutMe></AboutMe>
         </div>
 
     );

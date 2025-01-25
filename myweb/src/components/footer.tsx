@@ -19,10 +19,10 @@ function Footer() {
             <div className="details">
 
                 <div className="top">
-                    <a href='#' className="link">home</a>
-                    <a href='#' className="link">contact me</a>
-                    <a href='#' className="link">projects</a>
-                    <a href='#' className="link">CV</a>
+                    <a href='/' className="link">home</a>
+                    <a href='/' className="link">contact me</a>
+                    <a href='/' className="link">projects</a>
+                    <a href='/' className="link">CV</a>
                 </div>
 
                 <span className="line"></span>
