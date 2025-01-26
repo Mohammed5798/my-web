@@ -100,7 +100,7 @@ function NavBar() {
 
                         <Link to="/" className='link' onClick={() => setIsActive(true)}>home</Link>
 
-                        <Link to="/aboutMe" className='link' onClick={() => setIsActive(true)}>about me</Link>
+                        {/* <Link to="#aboutMe" className='link' onClick={() => setIsActive(true)}>about me</Link> */}
 
                         <select id="options" value="my skills" onChange={selectHandle}>
                             <option value="my skills" disabled>My Skills</option>
