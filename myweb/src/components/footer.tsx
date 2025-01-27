@@ -20,8 +20,8 @@ function Footer() {
 
                 <div className="top">
                     <a href='/' className="link">home</a>
-                    <a href='/' className="link">contact me</a>
-                    <a href='/' className="link">projects</a>
+                    <a href='/contact' className="link">contact me</a>
+                    <a href='/webDesign' className="link">projects</a>
                     <a href='/' className="link">CV</a>
                 </div>
 
@@ -29,7 +29,7 @@ function Footer() {
 
                 <div className="bottom">
                     <p className="text">Feel free to contact me anytime, anywhere.</p>
-                    <p className="email">mohammedrich000@mail.com</p>
+                    <p className="email">mohammedrich000@gmail.com</p>
                 </div>
             </div>
 

@@ -28,7 +28,7 @@ function NavBar() {
         let selectedValue = event.target.value;
 
         if (selectedValue === "option1") {
-            navigate('/graphicDesign');
+            navigate('/webDesign');
             setIsActive(true);
         } else {
             navigate('/webDev');
@@ -104,7 +104,7 @@ function NavBar() {
 
                         <select id="options" value="my skills" onChange={selectHandle}>
                             <option value="my skills" disabled>My Skills</option>
-                            <option value="option1" > Graphic Design</option>
+                            <option value="option1" > Web Design</option>
                             <option value="option2" >Web Development</option>
                         </select>
 
