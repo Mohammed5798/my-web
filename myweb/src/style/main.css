@@ -1773,3 +1773,35 @@
   background-color: #B49450;
   color: white;
 }
+
+.web-design-container-dark {
+  background-color: #1F2D23;
+  display: flex;
+  flex-direction: column;
+}
+.web-design-container-dark .top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px;
+}
+.web-design-container-dark .top .left {
+  margin-top: 25px;
+}
+.web-design-container-dark .top .left .title {
+  color: #B49450;
+  font-size: 75px;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.web-design-container-dark .top .left .line {
+  width: 650px;
+  height: 1px;
+  background-color: #B49450;
+  display: block;
+  margin-top: 17px;
+}
+.web-design-container-dark .top .left .text {
+  color: #B49450;
+  font-size: 19px;
+  margin-top: 40px;
+}
