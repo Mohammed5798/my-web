@@ -657,13 +657,53 @@
 
     .top{display: grid; grid-template-columns: 1fr 1fr; padding: 100px;
 
-        .left{margin-top: 25px;
+        .left{display: flex; flex-direction: column; margin-top: 15px;
 
             .title{color: #B49450; font-size: 75px; font-weight: 100; text-transform: capitalize;};
-            .line{width: 650px; height: 1px; background-color: #B49450; display: block; margin-top: 17px;};
-            .text{color: #B49450; font-size: 19px; margin-top: 40px;};
+            
+            .line{width: 630px; height: 1px; background-color: #B49450; display: block; margin-top: 12px;};
+            
+            .text{color: #B49450; font-size: 21px; margin-top: 30px; height: 200px; overflow: hidden; transition: .4s linear;
+
+                .ibrahim{color: white; text-transform: uppercase;}
+            };
+
+            .active-text{color: #B49450; font-size: 21px; margin-top: 20px; height: 350px; overflow: hidden; transition: .4s linear;
+
+                .ibrahim{color: white; text-transform: uppercase;};
+
+                .quote{color: white;};
+            };
+
+            .readMore{width: 155px; height: 49px; font-size: 22px; margin-top: 30px; background-color: #B49450; color: white; border: none; border-radius: 3px;
+                text-transform: capitalize; cursor: pointer; transition: .4s linear;  &:hover{background-color: white; color: #1F2D23; border-radius: 40px;};
+            };
+
+            .readLess{width: 155px; height: 49px; font-size: 22px; margin-top: 10px; background-color: #B49450; color: white; border: none; 
+                border-radius: 3px; text-transform: capitalize; cursor: pointer; transition: .4s linear;  
+
+                &:hover{background-color: white; color: #1F2D23; border-radius: 40px;};
+            };
         };
 
         .myImage{};
     };
+
+    .middle{display: grid; grid-template-columns: 1fr 1fr 1fr; text-align: center; align-items: center; background-color: #B49450;
+
+        height: 500px;
+
+        .creative{background-color: #1F2D23; width: 400px; margin-left: 50px; height: 350px; border-radius: 15px;
+            
+            .image{width: 170px; margin-top: 70px; margin-left: -20px;};
+        };
+
+        .communication{background-color: #1F2D23; width: 400px; margin-left: 50px; height: 350px; border-radius: 15px; text-align: center;
+            .image{width: 200px; margin-top: 52px;};
+        };
+
+        .responsive{background-color: #1F2D23; width: 400px; margin-left: 50px; height: 350px; border-radius: 15px;
+            .image{width: 170px; margin-top: 80px; margin-left: 15px;};
+        };
+    }
 };
