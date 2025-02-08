@@ -1804,7 +1804,7 @@
 }
 .web-design-container-dark .top .left .text {
   color: #B49450;
-  font-size: 21px;
+  font-size: 21.5px;
   margin-top: 30px;
   height: 200px;
   overflow: hidden;
@@ -1870,7 +1870,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   align-items: center;
-  background-color: #B49450;
+  background-color: white;
   height: 500px;
 }
 .web-design-container-dark .middle .creative {
@@ -1879,10 +1879,25 @@
   margin-left: 50px;
   height: 350px;
   border-radius: 15px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+.web-design-container-dark .middle .creative:hover {
+  scale: 1.1;
+  box-shadow: 0px 8px 7px 7px rgba(0, 0, 0, 0.512);
 }
 .web-design-container-dark .middle .creative .image {
-  width: 170px;
-  margin-top: 70px;
+  width: 160px;
+  margin-top: 35px;
+  margin-left: -20px;
+}
+.web-design-container-dark .middle .creative .image-white {
+  display: none;
+}
+.web-design-container-dark .middle .creative .title {
+  color: #B49450;
+  text-transform: uppercase;
+  margin-top: 30px;
   margin-left: -20px;
 }
 .web-design-container-dark .middle .communication {
@@ -1892,10 +1907,23 @@
   height: 350px;
   border-radius: 15px;
   text-align: center;
+  transition: 0.4s ease-in-out;
+}
+.web-design-container-dark .middle .communication:hover {
+  scale: 1.1;
+  box-shadow: 0px 8px 7px 7px rgba(0, 0, 0, 0.512);
 }
 .web-design-container-dark .middle .communication .image {
   width: 200px;
-  margin-top: 52px;
+  margin-top: 10px;
+}
+.web-design-container-dark .middle .communication .image-white {
+  display: none;
+}
+.web-design-container-dark .middle .communication .title {
+  color: #B49450;
+  text-transform: uppercase;
+  margin-top: 15px;
 }
 .web-design-container-dark .middle .responsive {
   background-color: #1F2D23;
@@ -1903,9 +1931,498 @@
   margin-left: 50px;
   height: 350px;
   border-radius: 15px;
+  transition: 0.4s ease-in-out;
+}
+.web-design-container-dark .middle .responsive:hover {
+  scale: 1.1;
+  box-shadow: 0px 8px 7px 7px rgba(0, 0, 0, 0.512);
 }
 .web-design-container-dark .middle .responsive .image {
   width: 170px;
-  margin-top: 80px;
-  margin-left: 15px;
+  margin-top: 40px;
+  margin-left: 5px;
+}
+.web-design-container-dark .middle .responsive .image-white {
+  display: none;
+}
+.web-design-container-dark .middle .responsive .title {
+  color: #B49450;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.web-design-container-dark .bottom {
+  padding-top: 100px;
+  padding-left: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.web-design-container-dark .bottom .left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.web-design-container-dark .bottom .left .title {
+  font-size: 53px;
+  color: #B49450;
+  text-transform: capitalize;
+  border-bottom: 2px solid #B49450;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+.web-design-container-dark .bottom .left .photoShop-checked {
+  width: 90px;
+  background-color: #001834;
+  padding: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-dark .bottom .left .photoshop {
+  width: 90px;
+  background-color: white;
+  padding: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-dark .bottom .left .illustrator {
+  width: 90px;
+  background-color: white;
+  padding: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-dark .bottom .left .illustrator-checked {
+  width: 90px;
+  background-color: #390000;
+  padding: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-dark .bottom .left .figma {
+  width: 90px;
+  background-color: white;
+  padding: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-dark .bottom .left .figma-checked {
+  width: 90px;
+  background-image: linear-gradient(0deg, #00BCFF 0%, #00CF7F 100%);
+  padding: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-dark .bottom .right {
+  margin-left: -200px;
+  width: 800px;
+  height: 700px;
+}
+.web-design-container-dark .bottom .right .photoshop-swiper-displayed {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.web-design-container-dark .bottom .right .photoshop-swiper-displayed .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+}
+.web-design-container-dark .bottom .right .photoshop-swiper-displayed .swiper-slide .image {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  cursor: grab;
+}
+.web-design-container-dark .bottom .right .photoshop-swiper-displayed .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  margin-bottom: -1.8px;
+  background-color: #B49450;
+  width: 12px;
+  height: 12px;
+}
+.web-design-container-dark .bottom .right .illustrator-swiper-displayed {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.web-design-container-dark .bottom .right .illustrator-swiper-displayed .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+}
+.web-design-container-dark .bottom .right .illustrator-swiper-displayed .swiper-slide .image {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  cursor: grab;
+}
+.web-design-container-dark .bottom .right .illustrator-swiper-displayed .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  margin-bottom: -1.8px;
+  background-color: #B49450;
+  width: 12px;
+  height: 12px;
+}
+.web-design-container-dark .bottom .right .figma-swiper-displayed {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.web-design-container-dark .bottom .right .figma-swiper-displayed .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+}
+.web-design-container-dark .bottom .right .figma-swiper-displayed .swiper-slide .image {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  cursor: grab;
+}
+.web-design-container-dark .bottom .right .figma-swiper-displayed .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  margin-bottom: -1.8px;
+  background-color: #B49450;
+  width: 12px;
+  height: 12px;
+}
+.web-design-container-dark .bottom .right .illustrator-swiper-not-displayed {
+  display: none;
+}
+.web-design-container-dark .bottom .right .photoshop-swiper-not-displayed {
+  display: none;
+}
+.web-design-container-dark .bottom .right .figma-swiper-not-displayed {
+  display: none;
+}
+
+.web-design-container-light {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.web-design-container-light .top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px;
+}
+.web-design-container-light .top .left {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.web-design-container-light .top .left .title {
+  color: #B49450;
+  font-size: 75px;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.web-design-container-light .top .left .line {
+  width: 630px;
+  height: 1px;
+  background-color: #B49450;
+  display: block;
+  margin-top: 12px;
+}
+.web-design-container-light .top .left .text {
+  color: #B49450;
+  font-size: 21.5px;
+  margin-top: 30px;
+  height: 200px;
+  overflow: hidden;
+  transition: 0.4s linear;
+}
+.web-design-container-light .top .left .text .ibrahim {
+  color: #1F2D23;
+  text-transform: uppercase;
+}
+.web-design-container-light .top .left .active-text {
+  color: #B49450;
+  font-size: 21px;
+  margin-top: 20px;
+  height: 350px;
+  overflow: hidden;
+  transition: 0.4s linear;
+}
+.web-design-container-light .top .left .active-text .ibrahim {
+  color: white;
+  text-transform: uppercase;
+}
+.web-design-container-light .top .left .active-text .quote {
+  color: white;
+}
+.web-design-container-light .top .left .readMore {
+  width: 155px;
+  height: 49px;
+  font-size: 22px;
+  margin-top: 30px;
+  background-color: #B49450;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+.web-design-container-light .top .left .readMore:hover {
+  background-color: white;
+  color: #1F2D23;
+  border-radius: 40px;
+}
+.web-design-container-light .top .left .readLess {
+  width: 155px;
+  height: 49px;
+  font-size: 22px;
+  margin-top: 10px;
+  background-color: #B49450;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+.web-design-container-light .top .left .readLess:hover {
+  background-color: white;
+  color: #1F2D23;
+  border-radius: 40px;
+}
+.web-design-container-light .middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  align-items: center;
+  background-color: #1F2D23;
+  height: 500px;
+}
+.web-design-container-light .middle .creative {
+  background-color: #B49450;
+  width: 400px;
+  margin-left: 50px;
+  height: 350px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+.web-design-container-light .middle .creative:hover {
+  scale: 1.1;
+  box-shadow: 0px 8px 7px 7px rgba(0, 0, 0, 0.512);
+}
+.web-design-container-light .middle .creative .image {
+  display: none;
+}
+.web-design-container-light .middle .creative .image-white {
+  width: 160px;
+  margin-top: 35px;
+  margin-left: -20px;
+}
+.web-design-container-light .middle .creative .title {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-left: -20px;
+}
+.web-design-container-light .middle .communication {
+  background-color: #B49450;
+  width: 400px;
+  margin-left: 50px;
+  height: 350px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+.web-design-container-light .middle .communication:hover {
+  scale: 1.1;
+  box-shadow: 0px 8px 7px 7px rgba(0, 0, 0, 0.512);
+}
+.web-design-container-light .middle .communication .image {
+  display: none;
+}
+.web-design-container-light .middle .communication .image-white {
+  width: 170px;
+  margin-top: 35px;
+  margin-left: -20px;
+}
+.web-design-container-light .middle .communication .title {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.web-design-container-light .middle .responsive {
+  background-color: #B49450;
+  width: 400px;
+  margin-left: 50px;
+  height: 350px;
+  border-radius: 15px;
+  transition: 0.4s ease-in-out;
+}
+.web-design-container-light .middle .responsive:hover {
+  scale: 1.1;
+  box-shadow: 0px 8px 7px 7px rgba(0, 0, 0, 0.512);
+}
+.web-design-container-light .middle .responsive .image {
+  display: none;
+}
+.web-design-container-light .middle .responsive .image-white {
+  width: 170px;
+  margin-top: 40px;
+  margin-left: 5px;
+}
+.web-design-container-light .middle .responsive .title {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.web-design-container-light .bottom {
+  padding-top: 100px;
+  padding-left: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.web-design-container-light .bottom .left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.web-design-container-light .bottom .left .title {
+  font-size: 53px;
+  color: #B49450;
+  text-transform: capitalize;
+  border-bottom: 2px solid #B49450;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+.web-design-container-light .bottom .left .photoShop-checked {
+  width: 90px;
+  background-color: #001834;
+  padding: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-light .bottom .left .photoshop {
+  width: 90px;
+  background-color: white;
+  padding: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-light .bottom .left .illustrator {
+  width: 90px;
+  background-color: white;
+  padding: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-light .bottom .left .illustrator-checked {
+  width: 90px;
+  background-color: #390000;
+  padding: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-light .bottom .left .figma {
+  width: 90px;
+  background-color: white;
+  padding: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-light .bottom .left .figma-checked {
+  width: 90px;
+  background-image: linear-gradient(0deg, #00BCFF 0%, #00CF7F 100%);
+  padding: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.web-design-container-light .bottom .right {
+  margin-left: -200px;
+  width: 800px;
+  height: 700px;
+}
+.web-design-container-light .bottom .right .photoshop-swiper-displayed {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.web-design-container-light .bottom .right .photoshop-swiper-displayed .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+}
+.web-design-container-light .bottom .right .photoshop-swiper-displayed .swiper-slide .image {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  cursor: grab;
+}
+.web-design-container-light .bottom .right .photoshop-swiper-displayed .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  margin-bottom: -1.8px;
+  background-color: #B49450;
+  width: 12px;
+  height: 12px;
+}
+.web-design-container-light .bottom .right .illustrator-swiper-displayed {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.web-design-container-light .bottom .right .illustrator-swiper-displayed .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+}
+.web-design-container-light .bottom .right .illustrator-swiper-displayed .swiper-slide .image {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  cursor: grab;
+}
+.web-design-container-light .bottom .right .illustrator-swiper-displayed .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  margin-bottom: -1.8px;
+  background-color: #B49450;
+  width: 12px;
+  height: 12px;
+}
+.web-design-container-light .bottom .right .figma-swiper-displayed {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.web-design-container-light .bottom .right .figma-swiper-displayed .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+}
+.web-design-container-light .bottom .right .figma-swiper-displayed .swiper-slide .image {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  cursor: grab;
+}
+.web-design-container-light .bottom .right .figma-swiper-displayed .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  margin-bottom: -1.8px;
+  background-color: #B49450;
+  width: 12px;
+  height: 12px;
+}
+.web-design-container-light .bottom .right .illustrator-swiper-not-displayed {
+  display: none;
+}
+.web-design-container-light .bottom .right .photoshop-swiper-not-displayed {
+  display: none;
+}
+.web-design-container-light .bottom .right .figma-swiper-not-displayed {
+  display: none;
 }

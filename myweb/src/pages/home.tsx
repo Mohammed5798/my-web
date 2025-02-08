@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import '../style/main.css'
 import { motion } from 'motion/react';
 import { useTheme } from '../context/context';
