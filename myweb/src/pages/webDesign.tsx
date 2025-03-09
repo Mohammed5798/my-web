@@ -10,7 +10,7 @@ import '../../node_modules/swiper/modules/effect-coverflow.css';
 import '../../node_modules/swiper/modules/pagination.css';
 
 // import required modules
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel } from 'swiper/modules';
 
 function WebDesign() {
 
@@ -188,7 +188,8 @@ function WebDesign() {
                             clickable: true,
                         }}
                         navigation={true}
-                        modules={[Navigation, Pagination]}
+                        mousewheel={{enabled:true}}
+                        modules={[Navigation, Pagination, Mousewheel]}
 
                     >
 
@@ -267,7 +268,8 @@ function WebDesign() {
                             clickable: true,
                         }}
                         navigation={true}
-                        modules={[Navigation, Pagination]}
+                        mousewheel={{enabled:true}}
+                        modules={[Navigation, Pagination, Mousewheel]}
                     >
 
                         <SwiperSlide className='swiper-slide'>
@@ -313,8 +315,8 @@ function WebDesign() {
                             clickable: true,
                         }}
                         navigation={true}
-                        modules={[Navigation, Pagination]}
-
+                        mousewheel={{enabled:true}}
+                        modules={[Navigation, Pagination, Mousewheel]}
                     >
                         <SwiperSlide className='swiper-slide'>
                             <img className='image' src="/assets/web_design_projects/photoshop/boat.png" alt="hi" />

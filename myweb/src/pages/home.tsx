@@ -18,23 +18,23 @@ function HomePage() {
                     <div className="top">
                         <motion.h1
     
-                            initial={{ x: -70, opacity: 0, }}
+                            initial={{ x: -120, opacity: 0, }}
                             animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 1.5, delay: 1.2, ease: 'backInOut' }}
+                            transition={{ duration: .8, delay: 1.4 }}
     
                             className="first-title">hi, my name is</motion.h1>
                         <motion.h1
     
-                            initial={{ x: -70, opacity: 0, }}
-                            animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 1.5, delay: 1.8, ease: 'backInOut' }}
+                            initial={{scale:0}}
+                            animate={{scale:1}}
+                            transition={{duration:1.2, delay:2.5}}
     
                             className="myname">mohammed</motion.h1>
                         <motion.h1
-    
-                            initial={{ x: -70, opacity: 0, }}
-                            animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 1.5, delay: 2.3, ease: 'backInOut' }}
+
+                            initial={{ x: 120, opacity: 0, }}
+                            animate={{ x: 0, opacity: 1,}}
+                            transition={{ duration: 1.3, delay: 1.4, }}
     
                             className="second-title">designer <span>&</span> developer</motion.h1>
                     </div>
@@ -44,7 +44,7 @@ function HomePage() {
     
                             initial={{ y: 120, opacity: 0, }}
                             animate={{ y: 0, opacity: 1,}}
-                            transition={{ duration: 1, delay: 2.8, type: 'spring' }}
+                            transition={{ duration: .8, delay: 3, type: 'spring' }}
     
                             className="button">explore</motion.button>
                     </a>

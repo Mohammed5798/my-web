@@ -55,14 +55,14 @@ function NavBar() {
         if (theme === "dark") return "inactive-navbar-dark";
     };
 
-    //* CV not completed
+    //! CV not completed
     const downloadingCV = () => {};
 
     return (
 
         <div className={theme == 'light' ? "navbar-container-light" : "navbar-container-dark"}>
 
-            {/* inactive navbar */}
+            {/* //! inactive navbar */}
             <motion.div className={isActive ? `${handleClassName2()}` : `${handleClassName1()}`}
                 initial={{ y: -30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -85,7 +85,7 @@ function NavBar() {
 
                 <span className="span-sun" onClick={toggleTheme}><LuSunMedium className='sun' /></span>
 
-                {/* active navbar */}
+                {/* //! active navbar */}
                 <div className="top">
                     <span className='button-close' onClick={menuClicking}><IoMdClose /></span>
                 </div>
@@ -99,8 +99,6 @@ function NavBar() {
                     <div className="left">
 
                         <Link to="/" className='link' onClick={() => setIsActive(true)}>home</Link>
-
-                        {/* <Link to="#aboutMe" className='link' onClick={() => setIsActive(true)}>about me</Link> */}
 
                         <select id="options" value="my skills" onChange={selectHandle}>
                             <option value="my skills" disabled>My Skills</option>
