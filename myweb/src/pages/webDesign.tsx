@@ -141,32 +141,36 @@ function WebDesign() {
                     
                     className="title">projects</motion.h1>
 
-                    <motion.img onClick={handlingPhotoshopProjects} src="/assets/web_design_projects/photoshop/photoshop icon.svg" alt="hi"
-                        className={photoshop == true ? "photoShop-checked" : "photoshop"} 
-                        
-                        initial={{ x:-100, opacity: 0, }}
-                        whileInView={{ x:0, opacity: 1 }}
-                        transition={{ duration: 1.5, delay: 1, ease: 'backInOut' }}
+                    <div className="apps">
 
-                        />
+                        <motion.img onClick={handlingPhotoshopProjects} src="/assets/web_design_projects/photoshop/photoshop icon.svg" alt="hi"
+                            className={photoshop == true ? "photoShop-checked" : "photoshop"} 
+                            
+                            initial={{ x:-100, opacity: 0, }}
+                            whileInView={{ x:0, opacity: 1 }}
+                            transition={{ duration: 1.5, delay: 1, ease: 'backInOut' }}
 
-                    <motion.img onClick={handlingIllustratorProjects} src="/assets/web_design_projects/illustrator/illustrator icon.svg" alt="hi"
-                        className={illustrator == false ? "illustrator" : "illustrator-checked"} 
-                        
-                        initial={{ x:-100, opacity: 0, }}
-                        whileInView={{ x:0, opacity: 1 }}
-                        transition={{ duration: 1.5, delay: 1.5, ease: 'backInOut' }}
+                            />
 
-                        />
+                        <motion.img onClick={handlingIllustratorProjects} src="/assets/web_design_projects/illustrator/illustrator icon.svg" alt="hi"
+                            className={illustrator == false ? "illustrator" : "illustrator-checked"} 
+                            
+                            initial={{ x:-100, opacity: 0, }}
+                            whileInView={{ x:0, opacity: 1 }}
+                            transition={{ duration: 1.5, delay: 1.5, ease: 'backInOut' }}
 
-                    <motion.img onClick={handlingFigmaProjects} src="/assets/web_design_projects/figma/figma icon.svg" alt="hi"
-                        className={figma == false ? "figma" : "figma-checked"} 
-                        
-                        initial={{ x:-100, opacity: 0, }}
-                        whileInView={{ x:0, opacity: 1 }}
-                        transition={{ duration: 1.5, delay: 2, ease: 'backInOut' }}
+                            />
 
-                        />
+                        <motion.img onClick={handlingFigmaProjects} src="/assets/web_design_projects/figma/figma icon.svg" alt="hi"
+                            className={figma == false ? "figma" : "figma-checked"} 
+                            
+                            initial={{ x:-100, opacity: 0, }}
+                            whileInView={{ x:0, opacity: 1 }}
+                            transition={{ duration: 1.5, delay: 2, ease: 'backInOut' }}
+
+                            />
+                    </div>
+
 
                 </div>
 

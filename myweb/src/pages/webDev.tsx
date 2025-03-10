@@ -31,7 +31,7 @@ function WebDev() {
 
             <div className="top">
 
-                <motion.div className="left"
+                <motion.div className="left-dev"
                     initial={{ y: -75, opacity: 0, }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1.7, delay: .7, ease: 'backInOut' }}
@@ -52,7 +52,7 @@ function WebDev() {
 
                 </motion.div>
 
-                <img className='myImage' src="" alt="" />
+                <img className='myImage' src="" alt="hi" />
             </div>
 
             <div className="middle">
