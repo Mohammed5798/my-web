@@ -128,7 +128,7 @@ function AboutMe() {
 
                 <div className="myImage">
 
-                    <img src="/assets/about me image.svg" alt="hi" className="image" />
+                    <img src="/assets/me front copy1.png" alt="hi" className="image" />
                 </div>
 
             </div>

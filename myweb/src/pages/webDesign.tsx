@@ -68,8 +68,8 @@ function WebDesign() {
             <div className="top">
 
                 <motion.div className="left"
-                    initial={{ y:-75, opacity: 0, }}
-                    animate={{ y:0, opacity: 1 }}
+                    initial={{ y: -75, opacity: 0, }}
+                    animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1.7, delay: .7, ease: 'backInOut' }}
                 >
 
@@ -86,9 +86,9 @@ function WebDesign() {
 
                         From that moment on, I threw myself into the world of design. I mastered Photoshop and Illustrator, and soon after, I
                         delved into Adobe XD. Each tool opened new doors for creativity, enabling me to craft stunning designs. Eventually, I
-                        also discovered Figma, which further expanded my skill set,
+                        also discovered Figma, which further expanded my skill set.
 
-                        <span className='quote'>What started as a single suggestion transformed into a passionate pursuit.</span>
+                        {/* <span className='quote'>What started as a single suggestion transformed into a passionate pursuit.</span> */}
                     </p>
 
                     <button className={className ? "readMore" : "readLess"} onClick={handleClicking}>{className ? "read more" : "read less"}</button>
@@ -103,82 +103,100 @@ function WebDesign() {
 
                 </motion.div>
 
-                <img className='myImage' src="" alt="" />
+                <img className='myImage' src="/assets/me left copy1.png" alt="hi" />
             </div>
 
             <div className="middle">
 
-                <span className="creative">
+                <motion.span className="creative"
+
+                    initial={{ scale: 1., opacity: 0, }}
+                    whileInView={{ scale: 0.9, opacity: 1 }}
+                    transition={{ duration: 2, type: "tween" }}
+
+                >
 
                     <img className='image' src="/assets/creativity.png" alt="hi" />
                     <img className='image-white' src="/assets/creativity (1).png" alt="hi" />
                     <h1 className="title"> creativity </h1>
-                </span>
+                </motion.span>
 
-                <span className="communication">
+                <motion.span className="communication"
+
+                    initial={{ scale: 1., opacity: 0, }}
+                    whileInView={{ scale: 0.9, opacity: 1 }}
+                    transition={{ duration: 2, type: "tween" }}
+
+                >
 
                     <img src="/assets/dialog (1).png" alt="hi" className="image" />
                     <img src="/assets/dialog.png" alt="hi" className="image-white" />
                     <h1 className="title"> communication </h1>
-                </span>
+                </motion.span>
 
-                <span className="responsive">
+                <motion.span className="responsive"
+
+                    initial={{ scale: 1., opacity: 0, }}
+                    whileInView={{ scale: 0.9, opacity: 1 }}
+                    transition={{ duration: 2, type: "tween" }}
+
+                >
 
                     <img src="/assets/responsive (1).png" alt="hi" className="image" />
                     <img src="/assets/responsive.png" alt="hi" className="image-white" />
                     <h1 className="title"> responsive </h1>
-                </span>
+                </motion.span>
 
             </div>
 
             <div className="bottom">
                 <div className="left">
                     <motion.h1
-                    
-                    initial={{ opacity: 0, }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1.5, ease: 'backInOut' }}
-                    
-                    className="title">projects</motion.h1>
+
+                        initial={{ opacity: 0, }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 1.5, ease: 'backInOut' }}
+
+                        className="title">projects</motion.h1>
 
                     <div className="apps">
 
                         <motion.img onClick={handlingPhotoshopProjects} src="/assets/web_design_projects/photoshop/photoshop icon.svg" alt="hi"
-                            className={photoshop == true ? "photoShop-checked" : "photoshop"} 
-                            
-                            initial={{ x:-100, opacity: 0, }}
-                            whileInView={{ x:0, opacity: 1 }}
+                            className={photoshop == true ? "photoShop-checked" : "photoshop"}
+
+                            initial={{ x: -100, opacity: 0, }}
+                            whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1.5, delay: 1, ease: 'backInOut' }}
 
-                            />
+                        />
 
                         <motion.img onClick={handlingIllustratorProjects} src="/assets/web_design_projects/illustrator/illustrator icon.svg" alt="hi"
-                            className={illustrator == false ? "illustrator" : "illustrator-checked"} 
-                            
-                            initial={{ x:-100, opacity: 0, }}
-                            whileInView={{ x:0, opacity: 1 }}
+                            className={illustrator == false ? "illustrator" : "illustrator-checked"}
+
+                            initial={{ x: -100, opacity: 0, }}
+                            whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1.5, delay: 1.5, ease: 'backInOut' }}
 
-                            />
+                        />
 
                         <motion.img onClick={handlingFigmaProjects} src="/assets/web_design_projects/figma/figma icon.svg" alt="hi"
-                            className={figma == false ? "figma" : "figma-checked"} 
-                            
-                            initial={{ x:-100, opacity: 0, }}
-                            whileInView={{ x:0, opacity: 1 }}
+                            className={figma == false ? "figma" : "figma-checked"}
+
+                            initial={{ x: -100, opacity: 0, }}
+                            whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1.5, delay: 2, ease: 'backInOut' }}
 
-                            />
+                        />
                     </div>
 
 
                 </div>
 
                 <motion.div className="right"
-                
-                initial={{ scale:.8, opacity: 0, }}
-                whileInView={{ scale:1, opacity: 1 }}
-                transition={{ duration: 1.5, delay: 3, ease: 'backInOut' }}
+
+                    initial={{ scale: .8, opacity: 0, }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1.5, delay: 3, ease: 'backInOut' }}
 
                 >
 
@@ -192,7 +210,7 @@ function WebDesign() {
                             clickable: true,
                         }}
                         navigation={true}
-                        mousewheel={{enabled:true}}
+                        //mousewheel={{enabled:true}}
                         modules={[Navigation, Pagination, Mousewheel]}
 
                     >
@@ -272,7 +290,7 @@ function WebDesign() {
                             clickable: true,
                         }}
                         navigation={true}
-                        mousewheel={{enabled:true}}
+                        //mousewheel={{enabled:true}}
                         modules={[Navigation, Pagination, Mousewheel]}
                     >
 
@@ -313,17 +331,41 @@ function WebDesign() {
                     <Swiper className={figma == false ? "figma-swiper-not-displayed" : 'figma-swiper-displayed'}
 
                         slidesPerView={1}
-                        spaceBetween={1}
+                        spaceBetween={50}
                         loop={true}
                         pagination={{
                             clickable: true,
                         }}
                         navigation={true}
-                        mousewheel={{enabled:true}}
+                        //mousewheel={{enabled:true}}
                         modules={[Navigation, Pagination, Mousewheel]}
                     >
                         <SwiperSlide className='swiper-slide'>
-                            <img className='image' src="/assets/web_design_projects/photoshop/boat.png" alt="hi" />
+                            <img className='image' src="/assets/web_design_projects/figma/Screenshot 2025-04-01 143502.png" alt="hi" />
+                        </SwiperSlide>
+
+                        <SwiperSlide className='swiper-slide'>
+                            <img className='image' src="/assets/web_design_projects/figma/Screenshot 2025-04-01 145903.png" alt="hi" />
+
+                        </SwiperSlide>
+
+                        <SwiperSlide className='swiper-slide'>
+
+                            <img className='image' src="/assets/web_design_projects/figma/Screenshot 2025-04-01 145750.png" alt="hi" />
+                        </SwiperSlide>
+
+                        <SwiperSlide className='swiper-slide'>
+
+                            <img className='image' src="/assets/web_design_projects/figma/Screenshot 2025-04-01 145621.png" alt="hi" />
+                        </SwiperSlide>
+
+                        <SwiperSlide className='swiper-slide'>
+
+                            <img className='image' src="/assets/web_design_projects/figma/Screenshot 2025-04-01 145457.png" alt="hi" />
+                        </SwiperSlide>
+
+                        <SwiperSlide className='swiper-slide'>
+                            <img className='image' src="/assets/web_design_projects/figma/Screenshot 2025-04-01 150002.png" alt="hi" />
                         </SwiperSlide>
 
                     </Swiper>

@@ -52,7 +52,7 @@ function WebDev() {
 
                 </motion.div>
 
-                <img className='myImage' src="" alt="hi" />
+                <img className='myImage' src="/assets/me left copy1.png" alt="hi" />
             </div>
 
             <div className="middle">
