@@ -75,9 +75,7 @@ function NavBar() {
 
                     <span className="left-line"> <span className="circle1"></span> </span>
 
-                    <h1 className="menu" onClick={menuClicking}
-
-                    >menu</h1>
+                    <h1 className="menu" onClick={menuClicking}>menu</h1>
 
                     <span className="right-line"> <span className="circle2"></span> </span>
 
