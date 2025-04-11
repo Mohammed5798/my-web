@@ -68,7 +68,7 @@ function AboutMe() {
 
                 >
                     <span className="shape"></span>
-                    <img className='my-image' src="/assets/me5 4.svg" alt="hi" />
+                    <img className='my-image' src="/assets/about me image (1).png" alt="hi" />
                 </motion.div>
 
                 <motion.div className="right-text"

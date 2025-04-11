@@ -5,9 +5,6 @@ import '../style/main.css';
 function Footer() {
 
     const { theme } = useTheme();
-    
-    console.log(theme);
-    
 
     return (
         <div className={theme == "light" ? "footer-container-light" : "footer-container-dark"}>

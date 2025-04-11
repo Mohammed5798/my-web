@@ -265,9 +265,9 @@
 
         .bottom{margin-left: -25px;
             .button{width: 190px; height: 67px; text-align: center; font-size: 37px; text-transform: capitalize; background-color: #B49450;
-                color: #D9D9D9; border: none; border-radius: 8px; font-weight: 500; cursor: pointer; transition: .6s;
+                color: white; border: none; border-radius: 8px; font-weight: 500; cursor: pointer; transition: .6s;
 
-                &:hover{background-color: #D9D9D9; color: #B49450; box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.853); scale: 1.1;};
+                &:hover{background-color: white; color: #B49450; box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.853); scale: 1.1;};
             };
         };
     };
@@ -298,9 +298,9 @@
 
         .bottom{margin-left: -25px;
             .button{width: 190px; height: 67px; text-align: center; font-size: 37px; text-transform: capitalize; background-color: #B49450;
-                color: #D9D9D9; border: none; border-radius: 8px; font-weight: 500; cursor: pointer; transition: .6s;
+                color: white; border: none; border-radius: 8px; font-weight: 500; cursor: pointer; transition: .6s;
 
-                &:hover{background-color: #1F2D23; color: #D9D9D9; box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.853); scale: 1.1;};
+                &:hover{background-color: #1F2D23; color: white; box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.853); scale: 1.1;};
             };
         };
     };
@@ -334,10 +334,10 @@
                     .myname{color: #B49450;};
                 };
                 
-                .readMore{width: 150px; height: 45px; font-size: 22px; background-color: #B49450; border: none; border-radius: 5px; color: #D9D9D9; 
-                    text-transform: capitalize; transition: .3s; margin-top: 20px; text-align: center; padding-top: 8.5px;
+                .readMore{width: 150px; height: 45px; font-size: 22px; background-color: #B49450; border: none; border-radius: 5px;
+                    color: white; text-transform: capitalize; transition: .3s; margin-top: 20px; text-align: center; padding-top: 8.5px;
                     &:hover{border: 2px solid #B49450; border-radius: 0px; color: #B49450; background-color: transparent; transition: .3s;};
-                    &:active{background-color: #D9D9D9; color: #1F2D23; border: none;}
+                    &:active{background-color: white; color: #1F2D23; border: none;}
                 };
             };
         };
@@ -1362,7 +1362,7 @@
     .footer-container-dark{margin-left: -200px;};
 };
 
-@media (max-width: 425px){
+@media (max-width: 450px){
 
 
     // ! navbar
@@ -1396,8 +1396,8 @@
                     .link{font-size: 50px; margin-top: 30px;};
     
                     #options{width: 240px; font-size: 50px; margin-left: 75px;
-                        margin-top: 25px;
-                        option{font-size: 30px;};
+                        margin-top: 25px; background-color: transparent;
+                        option{font-size: 30px; background-color: #1F2D23;};
                     };
                 };
     
@@ -1503,6 +1503,8 @@
                 .right{margin-top: 10px; margin-left: -10px;
                     
                     .text{font-size: 21.5px; height: 303px; width: 335px; margin-top: 15px;};
+
+                    .readMore{margin-top: 40px;}
                 };
             };
         
@@ -1520,7 +1522,7 @@
         
                     .text{height: 293px; width: 330px; font-size: 22px; margin-top: 15px;};
     
-                    .showedText{height: 506px; width: 330px; font-size: 22px; margin-top: 15px;};
+                    .showedText{height: 512px; width: 330px; font-size: 22px; margin-top: 15px;};
 
                     .readMore{margin-left: 95px;};
                 };
@@ -1564,6 +1566,8 @@
                 .right{margin-top: 10px; margin-left: -10px;
                     
                     .text{font-size: 21.5px; height: 303px; width: 335px; margin-top: 15px;};
+
+                    .readMore{margin-top: 40px};
                 };
             };
         
@@ -1581,7 +1585,7 @@
         
                     .text{height: 293px; width: 330px; font-size: 22px; margin-top: 15px;};
     
-                    .showedText{height: 506px; width: 330px; font-size: 22px; margin-top: 15px;};
+                    .showedText{height: 512px; width: 330px; font-size: 22px; margin-top: 15px;};
 
                     .readMore{margin-left: 95px;};
                 };
