@@ -4523,7 +4523,7 @@
     text-align: left;
   }
   .about-me-container-dark .top .right-text .left .text {
-    height: 292px;
+    height: 289px;
     width: 290px;
     font-size: 22px;
     margin-top: 15px;
@@ -4575,7 +4575,7 @@
   }
   .about-me-container-dark .down .left-text .right .text {
     font-size: 22px;
-    height: 291.5px;
+    height: 290px;
     width: 300px;
   }
   .about-me-container-dark .down .left-text .right .texted {
@@ -4643,7 +4643,7 @@
     text-align: left;
   }
   .about-me-container-light .top .right-text .left .text {
-    height: 292px;
+    height: 289px;
     width: 290px;
     font-size: 22px;
     margin-top: 15px;
@@ -4695,7 +4695,7 @@
   }
   .about-me-container-light .down .left-text .right .text {
     font-size: 22px;
-    height: 292px;
+    height: 290px;
     width: 300px;
   }
   .about-me-container-light .down .left-text .right .texted {
@@ -5324,7 +5324,7 @@
   .contact-container-dark .left {
     display: flex;
     flex-direction: column;
-    width: 351px;
+    width: 357px;
   }
   .contact-container-dark .left .outer-circle {
     width: 340px;
@@ -5383,7 +5383,7 @@
   .contact-container-light .left {
     display: flex;
     flex-direction: column;
-    width: 351px;
+    width: 357px;
   }
   .contact-container-light .left .outer-circle {
     width: 340px;

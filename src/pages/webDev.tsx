@@ -57,26 +57,44 @@ function WebDev() {
 
             <div className="middle">
 
-                <span className="creative">
+                <motion.span className="creative"
+                
+                initial={{ scale: 1., opacity: 0, }}
+                whileInView={{ scale: 0.9, opacity: 1 }}
+                transition={{ duration: 2, type: "tween" }}
+
+                >
 
                     <img className='image' src="/assets/problem-solving (1).png" alt="hi" />
                     <img className='image-white' src="/assets/problem-solving.png" alt="hi" />
                     <h1 className="title"> problem solving </h1>
-                </span>
+                </motion.span>
 
-                <span className="communication">
+                <motion.span className="communication"
+                
+                initial={{ scale: 1., opacity: 0, }}
+                whileInView={{ scale: 0.9, opacity: 1 }}
+                transition={{ duration: 2, type: "tween" }}
+
+                >
 
                     <img src="/assets/decision.png" alt="hi" className="image" />
                     <img src="/assets/decision (1).png" alt="hi" className="image-white" />
                     <h1 className="title"> critical thinking </h1>
-                </span>
+                </motion.span>
 
-                <span className="responsive">
+                <motion.span className="responsive"
+                
+                initial={{ scale: 1., opacity: 0, }}
+                whileInView={{ scale: 0.9, opacity: 1 }}
+                transition={{ duration: 2, type: "tween" }}
+
+                >
 
                     <img src="/assets/calendar.png" alt="hi" className="image" />
                     <img src="/assets/calendar (1).png" alt="hi" className="image-white" />
                     <h1 className="title"> time management </h1>
-                </span>
+                </motion.span>
 
             </div>
 
