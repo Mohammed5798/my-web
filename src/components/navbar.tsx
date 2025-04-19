@@ -14,6 +14,7 @@ import { useTheme } from '../context/context';
 function NavBar() {
 
     const [isActive, setIsActive] = useState(true);
+    let [isCv, setIsCv] = useState(false);
 
     const navigate = useNavigate();
 
@@ -56,7 +57,14 @@ function NavBar() {
     };
 
     //! CV not completed
-    const downloadingCV = () => {};
+    const downloadingCV = () => {
+
+        if(isCv == false){
+            setIsCv(true);
+        }else{
+            setIsCv(false);
+        }
+    };
 
     return (
 
@@ -107,7 +115,7 @@ function NavBar() {
                         <Link to="/contact" className='link' onClick={() => setIsActive(true)}>contact</Link>
 
                         {/* not completed */}
-                        <a className="link" onClick={downloadingCV}>download CV</a>
+                        <a className="link" onClick={downloadingCV}>{isCv == false ? "download CV" : "CV will be added soon"}</a>
 
                     </div>
 

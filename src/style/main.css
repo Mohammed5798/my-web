@@ -140,6 +140,7 @@
   text-transform: capitalize;
   color: #B49450;
   margin-top: 30px;
+  cursor: pointer;
 }
 .navbar-container-dark .active-navbar-dark .down .left #options {
   width: 300px;
