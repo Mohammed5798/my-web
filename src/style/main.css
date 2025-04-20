@@ -4368,7 +4368,7 @@
     margin-left: 40px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .navbar-container-dark .inactive-navbar-dark {
     margin: 0px 10px;
     gap: 0px 90px;
@@ -5435,7 +5435,7 @@
     margin-left: 40px;
   }
 }
-@media (min-width: 421px) and (max-width: 430px) {
+@media (min-width: 421px) and (max-width: 460px) {
   .navbar-container-dark .inactive-navbar-dark {
     margin: 0px 35px;
     gap: 0px 90px;
