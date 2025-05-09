@@ -115,7 +115,7 @@ function NavBar() {
                         <Link to="/contact" className='link' onClick={() => setIsActive(true)}>contact</Link>
 
                         {/* not completed */}
-                        <a className="link" onClick={downloadingCV}>{isCv == false ? "download CV" : "CV will be added soon"}</a>
+                        <a className="link" href='https://drive.google.com/file/d/1Jd32bSyA6L9ZN3KnKWwD8qJbXoryiFwy/view?usp=sharing'>CV</a>
 
                     </div>
 
