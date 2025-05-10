@@ -46,7 +46,7 @@ function Contact() {
           <a href="https://www.linkedin.com/in/mohamed-mob-720a12228/">
             <FaLinkedin className="icon" />
           </a>
-          <a href="https://www.instagram.com/22_mh_22/">
+          <a href="https://www.instagram.com/mohammed_mob7/">
             <AiFillInstagram className="icon" />
           </a>
           <a href="https://github.com/Mohammed5798">
