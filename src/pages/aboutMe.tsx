@@ -50,7 +50,7 @@ function AboutMe() {
                     <div className="right">
                         <h1 className="title">who am i</h1>
                         <p className="text">
-                            I am <span className="myname">Mohammed MOB. Oday</span> 19 years old, I live in Baghdad Iraq and I’m a passionate frontend developer and web designer,
+                            I am <span className="myname">Mohammed MOB. Oday</span> 20 years old, I live in Baghdad Iraq and I’m a passionate frontend developer and web designer,
                             and I'm a first-year college student in TECHNICAL COLLEGE OF MANAGEMENT, beside that I like reading books, running,
                             and playing chess, I’d like to connect and collaborate, Feel free to check out my projects or drop me a message to
                             discuss exciting opportunities.

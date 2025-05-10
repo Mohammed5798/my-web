@@ -19,7 +19,7 @@ function Footer() {
                     <a href='/' className="link">home</a>
                     <a href='/contact' className="link">contact me</a>
                     <a href='/webDesign' className="link">projects</a>
-                    <a href='/' className="link">CV</a>
+                    <a href='https://drive.google.com/file/d/1Jd32bSyA6L9ZN3KnKWwD8qJbXoryiFwy/view?usp=sharing' className="link">CV</a>
                 </div>
 
                 <span className="line"></span>

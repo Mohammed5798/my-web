@@ -56,16 +56,6 @@ function NavBar() {
         if (theme === "dark") return "inactive-navbar-dark";
     };
 
-    //! CV not completed
-    const downloadingCV = () => {
-
-        if(isCv == false){
-            setIsCv(true);
-        }else{
-            setIsCv(false);
-        }
-    };
-
     return (
 
         <div className={theme == 'light' ? "navbar-container-light" : "navbar-container-dark"}>
