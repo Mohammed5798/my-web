@@ -43,7 +43,7 @@ function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2, ease: "backOut" }}
         >
-          <a href="https://www.linkedin.com/in/mohamed-mob-720a12228/">
+          <a href="https://www.linkedin.com/in/mohammed-oday-mob-720a12228/">
             <FaLinkedin className="icon" />
           </a>
           <a href="https://www.instagram.com/mohammed_mob7/">
