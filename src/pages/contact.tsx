@@ -35,10 +35,13 @@ function Contact() {
           transition={{ duration: 1, delay: 1.2, type: "tween" }}
         >
           {" "}
-          <span className="inner-circle"><img className="myImage" src="/assets/me front.png" alt="hi" /></span>
+          <span className="inner-circle">
+            <img className="myImage" src="/assets/me front.webp" alt="hi" />
+          </span>
         </motion.span>
 
-        <motion.div className="accounts"
+        <motion.div
+          className="accounts"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 2, ease: "backOut" }}

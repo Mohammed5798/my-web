@@ -1,7 +1,7 @@
 import '../style/main.css';
 import { LuSunMedium } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { HiPaintBrush } from "react-icons/hi2";
 import { VscCodeOss, VscFileCode } from "react-icons/vsc";
 import { FiPenTool } from "react-icons/fi";
@@ -14,7 +14,6 @@ import { useTheme } from '../context/context';
 function NavBar() {
 
     const [isActive, setIsActive] = useState(true);
-    let [isCv, setIsCv] = useState(false);
 
     const navigate = useNavigate();
 

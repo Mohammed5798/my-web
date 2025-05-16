@@ -4,7 +4,6 @@ import { motion } from 'motion/react';
 import '../style/main.css';
 
 function AboutMe() {
-
     const [text, setText] = useState(true);
     const [text1, setText1] = useState(true);
 
@@ -68,7 +67,7 @@ function AboutMe() {
 
                 >
                     <span className="shape"></span>
-                    <img className='my-image' src="/assets/about me image (1).png" alt="hi" />
+                    <img className='my-image' src="/assets/about me image (1).webp" alt="hi" />
                 </motion.div>
 
                 <motion.div className="right-text"
@@ -128,7 +127,7 @@ function AboutMe() {
 
                 <div className="myImage">
 
-                    <img src="/assets/me front copy1.png" alt="hi" className="image" />
+                    <img src="/assets/me front copy1.webp" alt="hi" className="image" />
                 </div>
 
             </div>
